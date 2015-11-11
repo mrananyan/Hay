@@ -1,0 +1,68 @@
+﻿<!-- Fuck you microsoft -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{Logo}</title>
+  <link rel="stylesheet" href="{design}/css/main.css"/>
+  <link rel="stylesheet" href="{design}/css/bootstrap.css"/>
+</head>
+<body>
+<div id="container">
+  <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">{Logo}</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="https://www.gnu.org/licenses/quick-guide-gplv3.pdf" target="_blank">Արտոնագիր</a>
+            </li>
+            <li>
+              <a href="https://github.com/mrananyan/Hayastan" target="_blank">Բեռնել</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.facebook.com/MrAnanyan" target="_blank">Սարգիս Անանյան</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  <div id="content">
+    <video id="webcam" autoplay width="640" height="480"></video>
+    <canvas id="camera1" width="640" height="480"></canvas>
+    <canvas id="urvagic" width="640" height="480"></canvas>
+    <div class="motion-cam">Զեր ուրվագիծը</div>
+    <div id="tarer">
+      <div id="back"></div>
+      <div id="hayastan0" class="hayastan"></div>
+      <div id="hayastan1" class="hayastan"></div>
+      <div id="hayastan2" class="hayastan"></div>
+      <div id="hayastan3" class="hayastan"></div>
+      <div id="hayastan4" class="hayastan"></div>
+      <div id="hayastan5" class="hayastan"></div>
+      <div id="hayastan6" class="hayastan"></div>
+      <div id="hayastan7" class="hayastan"></div>
+    </div>
+  </div>
+  <div class="loading">Բեռնվում է</div>
+  <div class="introduction">
+    <p><img src="{design}/images/allow.png"></p>
+    <p>Թույլատրեք տեսախցիկի աշխատանքը «Allow»</p>
+  </div>
+  <div class="browsers">
+    <p>Բեռնեք Google Chrome <a href="https://www.google.com/chrome" target="_blank">այստեղից</a></p>
+  </div>
+</div>
+<script src="{design}/js/jquery.js"></script>
+<script src="{design}/js/bootstrap.js"></script>
+<script src="{design}/js/core.js"></script>
+</body>
+</html>

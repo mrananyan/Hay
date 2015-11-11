@@ -1,0 +1,197 @@
+video {
+	display: none;
+}
+
+#container {
+
+}
+#content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index:0;
+}
+.loading {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -40px;
+}
+.browsers,
+.introduction {
+    display:  none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -27px;
+}
+.browsers p,
+.introduction p {
+    margin: 0 0 0.1em 0;
+    padding: 0;
+}
+.browsers a {
+    color: #333;
+}
+
+#header {
+    position: absolute;
+    height: 55px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/header-background.png") repeat-x;
+    overflow: hidden;
+    z-index:2;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.browsersWithVideo,
+.instructions,
+.allow {
+    display: none;
+    line-height: 55px;
+    margin-left: 20px;
+}
+.browsersWithVideo {
+    font-size: 15px;
+}
+.browsersWithVideo a {
+    color: #AAA;
+}
+.backFromVideo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 64px;
+    text-align:  center;
+    font-size: 14px;
+}
+.backFromVideo a {
+    color: #333;
+}
+.magic {
+    float: left;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #AAA;
+    line-height: 55px;
+}
+.stinkdigital {
+    float: right;
+    padding-right: 20px;
+}
+.soundstep {
+    float: right;
+    padding-right: 10px;
+}
+
+#video-demo {
+	display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+}
+
+#camera1 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#urvagic {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 30%;
+}
+
+.motion-cam {
+    font-family: 'Open Sans', sans-serif;
+    display:none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    color: #7C7C7C;
+    bottom: 24%;
+    right: 0;
+    width: 28%;
+    white-space: nowrap;
+}
+
+#tarer {
+    display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+#tarer,
+#back,
+.hayastan {
+    width: 100%;
+    height: 0;
+    padding-bottom: 15.8%;
+}
+#tarer #back {
+    position: absolute;
+    top: 0;
+    left: .5%;
+    z-index:0;
+    background: url('../images/hayastan.png') no-repeat top left;
+    background-size: 100%;
+}
+#tarer #front {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    width: 640px;
+    margin: 0px;
+    padding: 0px;
+}
+#tarer #back img, #tarer #front img {
+    margin: 0px;
+    padding: 0px;
+}
+#tarer #front img {
+    position: absolute;
+    display: none;
+}
+
+
+.hayastan {
+    width: 12.5%;
+    float: left;
+    background: url('../images/hayastan.png') no-repeat bottom left;
+    position: relative;
+    z-index: 10;
+    background-size: 800%;
+    opacity: 0;
+}
+
+#hayastan0 { background-position-x: -0.5%; }
+#hayastan1 { background-position-x: 14%; }
+#hayastan2 { background-position-x: 28.2%; }
+#hayastan3 { background-position-x: 42.6%; }
+#hayastan4 { background-position-x: 56.8%; }
+#hayastan5 { background-position-x: 71.2%; }
+#hayastan6 { background-position-x: 85.2%; }
+#hayastan7 { background-position-x: 100%; }
