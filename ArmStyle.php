@@ -1,4 +1,4 @@
-﻿ <?php
+ <?php
 /**********************************************************************************************************************
 * ArmStyle - PHP Template Engine է: Այս կոդը կարող են օգտագործել միայն հայերը միայն հայկական նախագծերում
 * Տարբերակ: 1.0.0
@@ -6,7 +6,7 @@
 * Էլ. հասցե: saqoananyan@gmail.com
 * Հեռ. 1: 096-22-42-19
 * Հեռ. 2: 091-22-42-19
-* Facebook: https://www.facebook.com/mrananyan
+* Facebook: https://www.facebook.com/MrAnanyan
 * Web Site: http://MixNet.AM
 
 
@@ -34,6 +34,7 @@ AAAAAAA                   AAAAAArrrrrrr           mmmmmm   mmmmmm   mmmmmmSSSSSS
 
 
 *********************************************************************************************************************/
+$block_data = 0;
 class ArmStyle
         {
                 public function display($name, $var)
@@ -74,7 +75,6 @@ class ArmStyle
                                                 $this->template = preg_replace("#\\{include file=['\"](.+?)['\"]\\}#ies", "\$this->combine('\\1')", $this->template);
                                         }
                                 $this->copy_template = $this->template;
-                                $this->template_parse_time += $this->get_real_time() - $time_before;
                                 return true;
                         }
                 public function combine($arm_name)
@@ -117,21 +117,11 @@ class ArmStyle
                                                 $replace[] = $key_replace;
                                         }
                                 $result = str_replace($find, $replace, $this->copy_template);
-                                if (count($this->block_data))
-                                        {
-                                                foreach ($this->block_data as $key_find => $key_replace)
-                                                        {
-                                                                $find_preg[]    = $key_find;
-                                                                $replace_preg[] = $key_replace;
-                                                        }
-                                                $result = preg_replace($find_preg, $replace_preg, $result);
-                                        }
                                 if (isset($this->result[$arm]))
                                                 $this->result[$arm] .= $result;
                                 else
                                                 $this->result[$arm] = $result;
                                 $this->_clear();
-                                $this->template_parse_time += $this->get_real_time() - $time_before;
                         }
                 public function get_real_time()
                         {
