@@ -105,7 +105,7 @@ BufferLoader.prototype.load = function() {
             video: true
         }, function(stream) {
             window.stream = stream;
-            video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
             initialize();
         }, webcamError);
     } else if (navigator.webkitGetUserMedia) {
@@ -122,7 +122,7 @@ BufferLoader.prototype.load = function() {
             audio: false,
             video: true
         }, function(stream) {
-            video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
             initialize();
         }, webcamError);
     }
